@@ -1,0 +1,10 @@
+# .gitattributes dosyası
+
+# SCSS dosyaları
+*.scss linguist-detectable=false
+
+# JavaScript dosyaları
+*.js linguist-detectable=true
+
+# CSS dosyaları
+*.css linguist-detectable=false
