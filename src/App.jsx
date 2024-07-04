@@ -5,6 +5,8 @@ import DetailPage from './pages/DetailPage';
 import RootLayout from './components/layout/RootLayout';
 import ErrorPage from './pages/ErrorPage';
 import ContactPage from './pages/ContactPage';
+import CategoriesPage from './pages/CategoriesPage';
+import NewsPage from './pages/NewsPage';
 
 
 const router = createBrowserRouter([
@@ -15,7 +17,9 @@ const router = createBrowserRouter([
       {path:"/", element:<HomePage />},
       {path:"/DetailPage/:title", element:<DetailPage/>},
       {path:"/ErrorPage", element:<ErrorPage />},
-      {path:"/ContactPage", element:<ContactPage />}
+      {path:"/ContactPage", element:<ContactPage />},
+      {path:"/CategoriesPage", element:<CategoriesPage />},
+      {path:"/NewsPage/:section", element:<NewsPage />}
     ]
   }
 ])

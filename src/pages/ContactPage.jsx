@@ -3,7 +3,7 @@ import React, { Fragment } from 'react'
 export const ContactPage = () => {
   return (
     <Fragment>
-              <div className="container-fluid py-5">
+        <div className="container-fluid py-5">
             <div className="container py-5">
                 <div className="bg-light rounded p-5">
                     <div className="row g-4">
