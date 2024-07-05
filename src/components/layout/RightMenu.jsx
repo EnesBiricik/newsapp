@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export const RightMenu = ({ news }) => {
 
-    if(!news){
+    if (!news) {
         <p>veri yok!</p>
     }
 
@@ -19,17 +19,15 @@ export const RightMenu = ({ news }) => {
                         <h4 className="mb-4">Popular Categories</h4>
                         <div className="row g-2">
                             <div className="col-12">
-                                <a href="#" className="link-hover btn btn-light w-100 rounded text-uppercase text-dark py-3">
-                                    Life Style
-                                </a>
+                                <Link className="link-hover btn btn-light w-100 rounded text-uppercase text-dark py-3" to="/CategoriesPage">Go To Categories</Link>
                             </div>
                         </div>
                         <h4 className="my-4">Stay Connected</h4>
                         <div className="row g-4">
                             <div className="col-12">
-                                <a href="#" className="w-100 rounded btn btn-primary d-flex align-items-center p-3 mb-2">
-                                    <i className="fab fa-facebook-f btn btn-light btn-square rounded-circle me-3"></i>
-                                    <span className="text-white">13,977 Fans</span>
+                                <a target='_blank' href="https://www.instagram.com/enesbiriciksoftware/" class="w-100 rounded btn btn-dark d-flex align-items-center p-3 mb-2">
+                                    <i class="fab fa-instagram btn btn-light btn-square rounded-circle me-3"></i>
+                                    <span class="text-white">@enesbiriciksoftware</span>
                                 </a>
                             </div>
                         </div>
@@ -48,13 +46,15 @@ export const RightMenu = ({ news }) => {
                                         <div className="col-8">
                                             <div className="features-content d-flex flex-column">
                                                 <p className="text-uppercase mb-2">{newsItem.section}</p>
-                                               <Link to={`/DetailPage/${encodeURIComponent(newsItem.slug_name)}`} state={{ newsItem }}>{newsItem.title}</Link>
+                                                <Link to={`/DetailPage/${encodeURIComponent(newsItem.slug_name)}`} state={{ newsItem }}>{newsItem.title}</Link>
                                                 <small className="text-body d-block"><i className="fas fa-calendar-alt me-1"></i>{newsItem.created_date}</small>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <hr></hr>
                             </div>
+
                         ))}
                     </div>
                 </div>

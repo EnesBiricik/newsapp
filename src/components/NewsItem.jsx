@@ -21,7 +21,7 @@ export const NewsItem = ({ newsItem}) => {
 
     return (
         <Fragment>
-            <div className="whats-item col-lg-6">
+            <div className="whats-item col-lg-6 my-2">
                 <div className="bg-light rounded">
                     <div className="rounded-top overflow-hidden">
                         <img src={imageUrl.url} className="img-zoomin img-fluid rounded-top w-100" alt={imageUrl.caption} width={imageUrl.width} height={imageUrl.height}/>

@@ -142,7 +142,7 @@
 
 #note {
     position: relative;
-    animation: noteAnimate 10s infinite;
+    animation: noteAnimate 15s infinite;
     animation-timing-function: ease-in-out;
     display: flex;
     align-items: center;

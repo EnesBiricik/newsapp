@@ -50,9 +50,6 @@ export const NewsPage = () => {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>;
 
-
-
-
   return (
     <div className="container-fluid populer-news py-1">
     <div className="container py-5">
@@ -60,19 +57,7 @@ export const NewsPage = () => {
         <div className="row g-4">
           <div className="col-lg-8 col-xl-9">
             <div className="d-flex flex-column flex-md-row justify-content-md-between border-bottom mb-4">
-              <h1 className="mb-4">What’s New</h1>
-              <ul className="nav nav-pills d-inline-flex text-center">
-                <li className="nav-item mb-3">
-                  <a className="d-flex py-2 bg-light rounded-pill active me-2" data-bs-toggle="pill" href="#tab-1">
-                    <span className="text-dark" style={{ width: '100px' }}>Sports</span>
-                  </a>
-                </li>
-                <li className="nav-item mb-3">
-                  <a className="d-flex py-2 bg-light rounded-pill me-2" data-bs-toggle="pill" href="#tab-2">
-                    <span className="text-dark" style={{ width: '100px' }}>Magazine</span>
-                  </a>
-                </li>
-              </ul>
+              <h1 className="mb-4">{section} News</h1>
             </div>
             <div className="row">
               <News news={news} />

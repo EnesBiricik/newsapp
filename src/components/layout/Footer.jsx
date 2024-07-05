@@ -18,14 +18,10 @@ export const Footer = () => {
                             <div className="footer-item-1">
                                 <h4 className="mb-4 text-white">Get In Touch</h4>
                                 <p className="text-secondary line-h">Address: <span className="text-white">123 Streat, New York</span></p>
-                                <div className="d-flex line-h">
-                                    <a className="btn btn-light me-2 btn-md-square rounded-circle" href=""><i className="fab fa-twitter text-dark"></i></a>
-                                </div>
-
                                 <p>Created With New York Times API</p>
                                 <span className="text-light">
                                     <a target='_blank' href="https://developer.nytimes.com/">
-                                        <img src={`./assets/img/poweredby_nytimes_200c.png`} />
+                                        <img src={`../assets/img/poweredby_nytimes_200c.png`} />
                                     </a>
                                 </span>
                             </div>
@@ -43,20 +39,7 @@ export const Footer = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            <span className="text-light"><a href="#"><i className="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="container-fluid copyright bg-white py-4">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            <span className="text-light">
-                                <a target='_blank' href="https://developer.nytimes.com/">
-                                    <img src={`./assets/img/poweredby_nytimes_200c.png`} />
-                                </a>
-                            </span>
+                            <span className="text-dark">This Site is a product of <a href="https://enesbiricik.com/"><i className="fas fa-copyright text-dark text-light me-2"></i>enesbiricik.com</a>, All right reserved.</span>
                         </div>
                     </div>
                 </div>
