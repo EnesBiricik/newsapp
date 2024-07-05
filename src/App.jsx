@@ -13,6 +13,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
+    errorElement: <ErrorPage />,
     children: [
       {path:"/", element:<HomePage />},
       {path:"/DetailPage/:title", element:<DetailPage/>},
