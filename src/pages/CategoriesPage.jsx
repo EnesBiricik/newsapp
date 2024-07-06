@@ -9,7 +9,7 @@ const CategoriesPage = () => {
     useEffect(() => {
         const fetchCategories = async () => {
             try {
-                const apiKey = "YOUR_API_KEY";
+                const apiKey = "XAEExkFnfb4kzobbdGl4Atm4nbQ5xgts";
                 const response = await fetch(`https://api.nytimes.com/svc/news/v3/content/section-list.json?api-key=${apiKey}`);
 
                 if (!response.ok) {

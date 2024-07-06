@@ -10,7 +10,7 @@ export const Spinner = ({ date }) => {
     useEffect(() => {
         const fetchCurrencyData = async () => {
             try {
-                const apiKey = "YOUR_API_KEY"
+                const apiKey = "35001acb0614390fe34afb4f"
                 const response = await fetch(`https://v6.exchangerate-api.com/v6/${apiKey}/latest/USD`);
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
