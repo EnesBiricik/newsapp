@@ -1,6 +1,9 @@
 import React, { Fragment } from 'react'
 
 export const Weather = ({weather, locationInfo, errorMsg}) => {
+
+    console.log("Weather: "+weather+" LocationInfo: "+locationInfo+" ErrorMessage: "+errorMsg)
+
     return (
         <Fragment>
             <div className="d-flex">

@@ -25,7 +25,7 @@ export const Header = () => {
                     console.log(`Latitude: ${latitude}, Longitude: ${longitude}`); // Konum bilgilerini konsola yazdırma
 
                     // Konum bilgilerini coğrafi kodlama servisi ile şehre dönüştürmek (örneğin, OpenCage, Google Maps)
-                    fetch(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=65dfdfd3d4a24c7196c427316c3678bd`) // API anahtarınızı buraya koyun
+                    fetch(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=YOUR_API_KEY`) // API anahtarınızı buraya koyun
                         .then(response => {
                             if (!response.ok) {
                                 throw new Error('Network response was not ok');
@@ -59,7 +59,7 @@ export const Header = () => {
     useEffect(() => {
         const fetchNews = async () => {
             try {
-                const apiKey = "500c8c801bd4471b89f150134240507";
+                const apiKey = "YOUR_API_KEY";
                 const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${locationInfo.city}`);
 
                 if (!response.ok) {

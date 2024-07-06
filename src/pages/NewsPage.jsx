@@ -13,7 +13,7 @@ export const NewsPage = () => {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const apiKey = "XAEExkFnfb4kzobbdGl4Atm4nbQ5xgts";
+        const apiKey = "YOUR_API_KEY";
         const response = await fetch(`https://api.nytimes.com/svc/news/v3/content/nyt/${section}.json?api-key=${apiKey}`);
 
         if (!response.ok) {
